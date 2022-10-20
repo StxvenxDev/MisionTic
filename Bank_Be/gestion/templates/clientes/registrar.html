@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block titulo %} Login {% endblock %}
+
+{% block contenido %} 
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Cedula</th>
+        <th scope="col">Numero</th>
+        <th scope="col">Direccion</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for cli in lista_clientes %}
+        <tr>
+          <td>{{cli.id}}</td>
+          <td>{{cli.nombre}}</td>
+          <td>{{cli.apellido}}</td>
+          <td>{{cli.cedula}}</td>
+          <td>{{cli.numero}}</td>
+          <td>{{cli.direccion}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+<!--
+<h2>Listado de Clientes</h2>
+<ul class="list-group">
+    {% for cli in lista_clientes %}
+    <li class="list-group-item"> {{cli.id}} {{cli.nombre}} {{cli.apellido}}</li>
+    {% endfor %}
+</ul>
+-->
+{% endblock %}
