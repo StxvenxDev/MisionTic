@@ -104,10 +104,10 @@ WSGI_APPLICATION = 'appack.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dfcim2h86pjql5',
-        'USER': 'bigvhkaodntesg',
-        'PASSWORD': 'd7c9ac21dc06f443369825dea7bcba6a2fb3489b1efc1ba5058e7ef0edf02257',
-        'HOST': 'ec2-3-93-206-109.compute-1.amazonaws.com',
+        'NAME': 'd46lb502bkmth4',
+        'USER': 'uqozawsylpieeu',
+        'PASSWORD': '94e1f0b2117ace6341c0e0cf14c989483b39ff110f2710b27df27c0e831c2932',
+        'HOST': 'ec2-34-194-40-194.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
